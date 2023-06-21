@@ -5,13 +5,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.lessons.bestoftheyear.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller // dice a Spring che questa classe è un Controller
 @RequestMapping("/") // a quale rotta rispondono i metodi di questo Controller
-public class HomeController<Movie> {
+public class HomeController {
 
     @GetMapping() // risponde a richieste di tipo HTTP GET
 
