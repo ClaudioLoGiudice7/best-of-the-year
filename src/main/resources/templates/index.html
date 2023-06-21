@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <th:block th:replace="fragments :: head"></th:block>
     <title>Best Of The Year</title>
 </head>
 <body>
-    <h1>Best Of The Year by <span th:text="${name}"></span></h1>
+    <div class="container">
+        <h1>Best Of The Year by <span th:text="${name}"></span></h1>
+        <img th:src="@{/logo.jpg}" alt="app-logo">
+    </div>
 </body>
 </html>
